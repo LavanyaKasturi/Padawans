@@ -189,7 +189,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
-		if(student.getFullName().compareTo("")==0)
+		if(student==null)
 		{
 			throw new IllegalArgumentException();
 		}
