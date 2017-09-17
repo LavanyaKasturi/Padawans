@@ -69,7 +69,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
-		if(student==null)
+		if(student.getFullName().compareTo("")==0)
 		{
 			throw new IllegalArgumentException();
 		}
@@ -82,7 +82,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
-		if(student==null)
+		if(student.getFullName().compareTo("")==0)
 		{
 			throw new IllegalArgumentException();
 		}
@@ -121,7 +121,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
-		if(student==null)
+		if(student.getFullName().compareTo("")==0)
 		{
 			throw new IllegalArgumentException();
 		}
@@ -160,7 +160,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void removeFromElement(Student student) {
-		if(student==null)
+		if(student.getFullName().compareTo("")==0)
 		{
 			throw new IllegalArgumentException();
 		}
