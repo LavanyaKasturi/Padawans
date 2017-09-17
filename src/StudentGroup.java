@@ -263,7 +263,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public int getCurrentAgeByDate(int indexOfStudent) {
-		if(student==null)
+		if(indexOfStudent==null)
 		{
 			throw new IllegalArgumentException();
 		}
