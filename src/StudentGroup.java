@@ -275,9 +275,26 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudentsWithMaxAvgMark() {
 		// Add your implementation here
-		return null;
+		Student temp[]=new Student[this.students.length];
+		int length=0;
+		int max=this.students[0].getAvgMark();
+		for(int i=1;i<students.length;i++)
+		{
+			if(this.students[i].getAvgMark()>max)
+			{
+				max=this.students[i].getAvgMark();
+			}
+		}
+		for(int i=0;i<students.length;i++)
+		{
+			if(this.students[i].getAvgMark()==max)
+			{
+				temp[length++]=this.students[i];
+			}
+		}		
+		temp = Arrays.copyOf(temp,length);
+		return temp;
 	}
-
 	@Override
 	public Student getNextStudent(Student student) {
 		Student temp_student=null;
