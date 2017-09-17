@@ -277,7 +277,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		Student temp[]=new Student[this.students.length];
 		int length=0;
-		int max=this.students[0].getAvgMark();
+		double max=this.students[0].getAvgMark();
 		for(int i=1;i<students.length;i++)
 		{
 			if(this.students[i].getAvgMark()>max)
