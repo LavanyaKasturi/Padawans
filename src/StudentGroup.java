@@ -246,10 +246,6 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getBetweenBirthDates(Date firstDate, Date lastDate) {
 		// Add your implementation here
-		if(date==null)
-		{
-			throw new IllegalArgumentException();
-		}
 		if(firstDate==null||lastDate==null)
 		{
 			throw new IllegalArgumentException();
